@@ -1,5 +1,11 @@
 # Projects
 
+## Project Index
+
+Kushal has built several portfolio projects, including the Live Agentic Repair System, PanicPal, Oatmeal AI Dashboards, AI Voice Agent Projects, and a RAG Knowledge Assistant.
+
+These projects cover multimodal AI, real-time video analysis, AI voice agents, React dashboards, backend APIs, AI integrations, retrieval-augmented generation, Supabase pgvector, Gemini embeddings, and full-stack product workflows.
+
 ## Live Agentic Repair System
 
 Built at the Google I/O Build with AI Hackathon x Google Cloud Labs at the Computer History Museum in Mountain View.
