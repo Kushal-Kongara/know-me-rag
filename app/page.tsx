@@ -133,6 +133,44 @@ export default function Home() {
           </div>
         )}
 
+        <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6">
+          <h2 className="mb-4 text-xl font-semibold">
+            How this RAG system works
+          </h2>
+
+          <div className="grid gap-3 md:grid-cols-3">
+            <div className="rounded-2xl border border-white/10 bg-slate-900 p-4">
+              <p className="mb-2 text-sm font-semibold text-cyan-300">
+                1. Knowledge Source
+              </p>
+              <p className="text-sm leading-6 text-slate-400">
+                My portfolio information is stored in a markdown file with
+                projects, skills, hackathons, and experience.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-900 p-4">
+              <p className="mb-2 text-sm font-semibold text-cyan-300">
+                2. Embeddings + Search
+              </p>
+              <p className="text-sm leading-6 text-slate-400">
+                The text is split into chunks, converted into Gemini embeddings,
+                and stored in Supabase pgvector for semantic search.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-900 p-4">
+              <p className="mb-2 text-sm font-semibold text-cyan-300">
+                3. Grounded Answer
+              </p>
+              <p className="text-sm leading-6 text-slate-400">
+                When someone asks a question, the app retrieves relevant chunks
+                and sends them to Gemini to generate a grounded answer.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {sources.length > 0 && (
           <div className="mt-6 rounded-3xl border border-white/10 bg-white/5 p-6">
             <h2 className="mb-4 text-xl font-semibold">Retrieved Sources</h2>
