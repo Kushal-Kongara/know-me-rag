@@ -6,7 +6,7 @@ Instead of relying only on the model's memory, the app retrieves relevant inform
 
 ## Live Demo
 
-Coming soon.
+https://know-me-rag.vercel.app/
 
 ## What This Project Does
 
