@@ -27,3 +27,18 @@ export async function createEmbedding(text: string): Promise<number[]> {
 
     return embedding;
 }
+
+export async function generateAnswer(prompt: string): Promise<string> {
+    const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: prompt,
+    });
+
+    const text = response.text;
+
+    if (!text) {
+        throw new Error("Failed to generate answer");
+    }
+
+    return text;
+}
