@@ -1,65 +1,43 @@
-# Profile
-
-Kushal Kongara is a full-stack engineer with 4+ years of experience building scalable web applications, AI-powered products, backend APIs, cloud-based systems, and user-facing dashboards.
-
-He has experience with React, Next.js, TypeScript, Node.js, Python, AWS, PostgreSQL, MongoDB, Docker, REST APIs, RAG systems, AI integrations, and cloud deployments.
-
-# Education
-
-Kushal completed his Master's degree in Electrical Engineering from San Jose State University.
-
-His background includes software engineering, AI systems, FPGA, image processing, hardware systems, and systems thinking.
-
-# Experience
-
-At Oatmeal AI, Kushal built React dashboards, full-stack product workflows, backend APIs, integrations, and AI-powered features.
-
-He worked on improving product usability, workflow visibility, and scalable user-facing experiences.
-
-# AI Experience
-
-Kushal has built projects involving RAG systems, AI integrations, voice agents, automation workflows, real-time AI experiences, and LLM-powered applications.
-
-He understands how to build AI systems that retrieve relevant context, generate grounded responses, and support practical user workflows.
-
-# Hackathons
-
-Kushal has won 3+ hackathons and built practical AI and full-stack projects under tight deadlines.
-
-He presented an AI voice application at Vapi, demonstrating real-time voice agent workflows and product thinking.
-
-At the Google I/O Build with AI Hackathon x Google Cloud Labs at the Computer History Museum in Mountain View, his team built a Live Agentic Repair System.
-
-The system analyzes live video and marks areas users should inspect, fix, or improve. It can be adapted for vehicles, home appliances, hardware systems, field maintenance, and DIY troubleshooting.
-
 # Projects
 
 ## Live Agentic Repair System
 
-A multimodal AI assistant that analyzes live video and gives visual repair guidance. It helps users inspect, diagnose, and improve physical systems by showing where to focus.
+Built at the Google I/O Build with AI Hackathon x Google Cloud Labs at the Computer History Museum in Mountain View.
+
+The project is a live AI repair assistant that analyzes video input and identifies areas a user should inspect, fix, or improve. The goal was to move beyond text-based chat and create a multimodal assistant that can see the user's environment and provide real-time visual guidance.
+
+The system can be adapted for repair and troubleshooting workflows such as vehicles, home appliances, hardware systems, field maintenance, and DIY repairs.
+
+Key ideas included live video analysis, agentic guidance, visual feedback, custom repair workflows, and practical AI-human interaction.
 
 ## PanicPal
 
-An AI voice companion app designed to support users during anxious or stressful moments. It includes voice interaction, journaling, emotional pattern tracking, AI-assisted summaries, and therapist-ready reports.
+Built an AI voice companion app designed to support users during anxious or stressful moments.
+
+The app includes voice-based interaction, journaling, emotional pattern tracking, panic episode logging, AI-assisted summaries, and therapist-ready reports.
+
+The product focus was to create a calm, supportive, non-clinical experience where users can talk, reflect, and understand emotional patterns over time.
+
+## Oatmeal AI Dashboards
+
+At Oatmeal AI, built React dashboards and full-stack product workflows to improve user visibility, workflow tracking, and product usability.
+
+Worked on backend APIs, integrations, AI-powered features, and scalable user-facing experiences.
+
+The work involved connecting frontend interfaces with backend services and improving how users interacted with AI-driven workflows.
 
 ## AI Voice Agent Projects
 
-Kushal has built AI voice agent workflows using tools like Vapi, focusing on real-time conversation, user support, and practical AI product experiences.
+Built AI voice agent workflows using tools like Vapi.
 
-## RAG Systems
+Focused on real-time conversation, voice-based interaction, user support flows, and practical AI product experiences.
 
-Kushal has worked on retrieval-augmented generation systems that use document chunking, embeddings, vector search, and LLM responses to answer questions from private knowledge sources.
+Presented an AI voice application at Vapi, demonstrating product thinking around real-time voice agents.
 
-# Strengths
+## RAG Knowledge Assistant
 
-Kushal is strong in full-stack engineering, AI product development, React dashboards, backend APIs, cloud systems, RAG workflows, and rapid prototyping.
+Built a Retrieval-Augmented Generation system that uses document chunking, Gemini embeddings, Supabase pgvector, semantic search, and Gemini response generation.
 
-He is especially interested in building practical AI products that solve real user problems instead of simple chatbot demos.
+The system stores personal portfolio knowledge as chunks, retrieves the most relevant chunks based on a user question, and generates grounded answers using only the retrieved context.
 
-# Links
-
-Portfolio: https://kushalkongara.vercel.app/
-
-LinkedIn: https://www.linkedin.com/in/kushalkongara/
-
-GitHub: https://github.com/Kushal-Kongara
+This project demonstrates the full RAG pipeline: knowledge source, chunking, embeddings, vector database storage, retrieval, context injection, and LLM-based answer generation.
