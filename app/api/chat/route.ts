@@ -40,7 +40,22 @@ export async function POST(request: NextRequest) {
 
         const matches = (data ?? []) as MatchDocument[];
 
-        const context = matches
+        const SIMILARITY_THRESHOLD = 0.55;
+
+        const relevantMatches = matches.filter(
+            (match) => match.similarity >= SIMILARITY_THRESHOLD
+        );
+
+        if (relevantMatches.length === 0) {
+            return NextResponse.json({
+                answer:
+                    "I don't have that information in my current knowledge base.",
+                sources: [],
+            });
+        }
+
+        const context = relevantMatches
+            .slice(0, 4)
             .map((match, index) => {
                 return `Source ${index + 1}:\n${match.content}`;
             })
@@ -69,7 +84,7 @@ ${question}
 
         return NextResponse.json({
             answer,
-            sources: matches.map((match) => ({
+            sources: relevantMatches.slice(0, 4).map((match) => ({
                 content: match.content,
                 metadata: match.metadata,
                 similarity: match.similarity,
